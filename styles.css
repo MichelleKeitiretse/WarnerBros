@@ -1,0 +1,254 @@
+body{
+  background-color: paleturquoise;
+}
+
+.content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+image.container img{
+ 
+  
+    width: 210px; /* Set the width to the desired size for a square image */
+    height: 450px; /* Set the height to match the width for a square image */
+  
+  
+}
+
+h2{
+  color:purple;
+  font-size: xx-large;
+ 
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: purple;
+}
+
+p {
+  font-size: xx-large;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color:purple;
+  text-decoration: bold;
+  text-align: center;
+  
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color:grey;
+  position: sticky;
+  top: 0;
+}
+.menu-list :hover{
+  color:orange;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-size: 30px;
+  color:purple;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+/*feedack page*/
+form {
+  max-width: 800px; /* Increased from 500px to 800px */
+  margin: 0 auto;
+  padding: 30px; /* Increased from 20px to 30px */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px; /* Increased from 10px to 15px */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px; /* Increased from 5px to 10px */
+  margin-bottom: 15px; /* Increased from 10px to 15px */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+  button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  button:hover {
+  background-color: #0056b3;
+  }
+table {
+
+  border-spacing:auto;
+  border-collapse: collapse ;
+  font-size: 25px;
+}
+@media screen and (max-width: 1200px){
+  article{
+      flex: 0 0 calc(50% - 30px);
+  }
+}
+
+@media screen and(max-width: 768px){
+  article{
+      flex: 0 0 100%
+  }
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+*{
+  box-sizing: border-box;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+footer {
+  background-color:grey;
+  color: purple;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: purple;
+  text-decoration: none;
+}
+
+.slideshow {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height:500px ;
+}
+/* Initially hide movie descriptions */
+.movie-description {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Position movie descriptions relative to their respective buttons */
+.movie-button {
+  position: relative;
+}
+
+/* Show movie descriptions on hover */
+.movie-button:hover + .movie-description {
+  display: block;
+}
+
+.container4 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.team-member {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin-top: 0;
+}
+.container5{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  margin-right: 20px;
+}
+
+.about-content {
+  flex: 1;
+}
