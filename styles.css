@@ -1,7 +1,22 @@
 body{
   background-color: paleturquoise;
 }
-
+.slideshow {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height:500px ;
+}
+*{
+  box-sizing: border-box;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
 .content{
   position: relative;
   top: 50%;
@@ -10,14 +25,7 @@ body{
   color: white;
   padding: 0 20px;
 }
-image.container img{
- 
-  
-    width: 210px; /* Set the width to the desired size for a square image */
-    height: 450px; /* Set the height to match the width for a square image */
-  
-  
-}
+
 
 h2{
   color:purple;
@@ -141,13 +149,7 @@ video {
   object-fit: fill;
 }
 
-*{
-  box-sizing: border-box;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
+/*footer styling*/
 footer {
   background-color:grey;
   color: purple;
@@ -167,7 +169,6 @@ footer p {
   margin: 0;
   font-size: 14px;
 }
-
 .nav {
   display: flex;
   list-style-type: none;
@@ -185,15 +186,7 @@ footer p {
   text-decoration: none;
 }
 
-.slideshow {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  height:500px ;
-}
+
 /* Initially hide movie descriptions */
 .movie-description {
   display: none;
@@ -224,31 +217,51 @@ footer p {
 section {
   margin-bottom: 20px;
 }
-
-.team-member {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.team-member h3 {
-  margin-top: 0;
-}
-.container5{
-  max-width: 800px;
+  /*styling the about page*/      
+.about-container{
+  width: 90%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
-.about {
+.about{
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.about-image {
-  margin-right: 20px;
-}
-
-.about-content {
+.about-image{
   flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+ 
+}
+
+.about-image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+  width: 500px;
+ 
+}
+
+.about-image:hover img{
+  transform: scale(1.2);
+}
+
+.about-content{
+  flex: 1;
+  font-size: 15px;
+}
+
+.about-content h2{
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
 }
